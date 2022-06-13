@@ -1,0 +1,1085 @@
+CRITICAL - 2022-03-03 00:32:13 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\codeigniterf\system\Session\Handlers\FileHandler.php(71): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\Config\Services.php(570): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#7 C:\xampp\htdocs\codeigniterf\system\Common.php(901): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\codeigniterf\app\Filters\AuthFilter.php(12): session()
+#9 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('Dashboard', 'before')
+#11 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-03-03 00:32:13 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\codeigniterf\app\Config\Events.php:32) in C:\xampp\htdocs\codeigniterf\system\Debug\Exceptions.php:112
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 112)
+#1 C:\xampp\htdocs\codeigniterf\system\Debug\Exceptions.php(112): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-03 00:35:19 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\codeigniterf\system\Session\Handlers\FileHandler.php(71): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\Config\Services.php(570): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 C:\xampp\htdocs\codeigniterf\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#7 C:\xampp\htdocs\codeigniterf\system\Common.php(901): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\codeigniterf\app\Filters\AuthFilter.php(12): session()
+#9 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('Dashboard', 'before')
+#11 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-03-03 00:35:19 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\codeigniterf\app\Config\Events.php:32) in C:\xampp\htdocs\codeigniterf\system\Debug\Exceptions.php:112
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 112)
+#1 C:\xampp\htdocs\codeigniterf\system\Debug\Exceptions.php(112): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-03 00:58:09 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 01:00:45 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 01:04:39 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\setting\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('setting/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(41): view('setting/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 01:05:11 --> Call to undefined method Config\View::item()
+#0 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('setting/index', Array, true)
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(41): view('setting/index', Array)
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->index()
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 01:05:39 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\xampp\htdocs\codeigniterf\app\Views\setting\index.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('setting/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(41): view('setting/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 01:08:15 --> Undefined property: App\Controllers\Setting::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 01:08:38 --> Undefined property: App\Controllers\Setting::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 01:10:46 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::is_ajax_request()
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 01:23:57 --> filter_var(): Unknown filter with ID 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): U...', 'C:\\xampp\\htdocs...', 298)
+#1 C:\xampp\htdocs\codeigniterf\system\HTTP\RequestTrait.php(298): filter_var('SEED HARVEST', 1, 0)
+#2 C:\xampp\htdocs\codeigniterf\system\HTTP\IncomingRequest.php(503): CodeIgniter\HTTP\Request->fetchGlobal('request', 'setting_value', 1, 0)
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(71): CodeIgniter\HTTP\IncomingRequest->getVar('setting_value', true)
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 01:25:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(154): App\Models\Common->update_data(Array, 'settings', 'setting_id', '1')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 01:49:27 --> CodeIgniter\Validation\FileRules::uploaded(): Argument #2 ($name) must be of type string, null given, called in C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(291): CodeIgniter\Validation\FileRules->uploaded(NULL, NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('setting_value', 'field_value', NULL, Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(77): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-03 01:52:34 --> Array to string conversion
+#0 C:\xampp\htdocs\codeigniterf\app\Views\setting\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('setting/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(40): view('setting/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 01:55:03 --> Call to undefined function App\Controllers\validation()
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 01:55:18 --> <div class="error"> is not a valid Validation template.
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(485): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('<div class="err...')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(78): CodeIgniter\Validation\Validation->listErrors('<div class="err...', '</div>')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 02:35:05 --> Unable to save the image. Please make sure the image and file directory are writable.
+#0 C:\xampp\htdocs\codeigniterf\system\Images\Handlers\GDHandler.php(245): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(86): CodeIgniter\Images\Handlers\GDHandler->save('http://localhos...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 02:36:33 --> Unable to save the image. Please make sure the image and file directory are writable.
+#0 C:\xampp\htdocs\codeigniterf\system\Images\Handlers\GDHandler.php(245): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(86): CodeIgniter\Images\Handlers\GDHandler->save('http://localhos...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 02:36:36 --> Unable to save the image. Please make sure the image and file directory are writable.
+#0 C:\xampp\htdocs\codeigniterf\system\Images\Handlers\GDHandler.php(245): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(86): CodeIgniter\Images\Handlers\GDHandler->save('http://localhos...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 02:38:10 --> fopen(http://localhost/codeigniterf/public/uploads/logo/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'C:\\xampp\\htdocs...', 179)
+#1 C:\xampp\htdocs\codeigniterf\system\HTTP\Files\UploadedFile.php(179): fopen('http://localhos...', 'x+b')
+#2 C:\xampp\htdocs\codeigniterf\system\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(88): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 02:39:42 --> fopen(http://localhost/codeigniterf/public/uploads/logo/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'C:\\xampp\\htdocs...', 179)
+#1 C:\xampp\htdocs\codeigniterf\system\HTTP\Files\UploadedFile.php(179): fopen('http://localhos...', 'x+b')
+#2 C:\xampp\htdocs\codeigniterf\system\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(88): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 02:43:39 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:43 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:44 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:44 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:44 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:45 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:50 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:50 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:43:54 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:44:11 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:44:40 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index')
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 02:44:41 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index')
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 02:44:41 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index')
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 02:45:08 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:45:09 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:45:38 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 46
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:46:10 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(46): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 02:46:35 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 02:47:28 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 02:48:09 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 02:48:13 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:48:14 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:48:15 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:48:15 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:15 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:16 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:16 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:17 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:17 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:17 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:17 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:17 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:18 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:29 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:50:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:51:17 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 02:52:34 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:35 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:37 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 02:52:37 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php on line 45
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', NULL)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 03:10:35 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:10:35 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:10:45 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:10:45 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:10:45 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:12:30 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:12:31 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:12:31 --> Undefined variable $title
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(45): view('login/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 03:13:21 --> Too few arguments to function App\Controllers\Login::initController(), 0 passed in C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->initController()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:13:22 --> Too few arguments to function App\Controllers\Login::initController(), 0 passed in C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->initController()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:14:24 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:15:24 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:15:36 --> Call to a member function selectRecordById() on null
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:17:17 --> Undefined variable $isFile
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Setting.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Setting->update()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 03:32:29 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-03 03:38:53 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(797): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 797)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:38:54 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(797): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 797)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:38:56 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(797): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 797)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 03:39:05 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(797): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 797)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 05:32:57 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\dashboard\profile.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/profi...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(91): view('dashboard/profi...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->Profile()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 05:33:42 --> xss_clean is not a valid rule.
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('xss_clean')
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('first_name', 'firstname', 'arazu', Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(101): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->editProfile()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-03 05:41:27 --> Undefined variable $info
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 123)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->editProfile()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 05:44:33 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 140)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->editProfile()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 05:45:01 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::ip_address()
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->editProfile()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 05:47:22 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php on line 146
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(146): CodeIgniter\HTTP\RedirectResponse->to('Dashboard', 'refresh')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->editProfile()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 05:52:07 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\xampp\htdocs\codeigniterf\app\Views\dashboard\changepass.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 85)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/chang...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(85): view('dashboard/chang...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->changePassword()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 06:02:31 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 177)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->change_password()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 06:02:57 --> Undefined property: App\Controllers\Dashboard::$load
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->change_password()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 06:15:26 --> Class "My_Controller" not found
+#0 C:\xampp\htdocs\codeigniterf\system\Router\Router.php(518): include_once()
+#1 C:\xampp\htdocs\codeigniterf\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('TransactionSett...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('TransactionSett...')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:39:34 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\xampp\htdocs\codeigniterf\app\Views\transactionsetting\index.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('transactionsett...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\TransactionSetting.php(35): view('transactionsett...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\TransactionSetting->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionSetting))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 06:40:56 --> filter_var(): Unknown filter with ID 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): U...', 'C:\\xampp\\htdocs...', 298)
+#1 C:\xampp\htdocs\codeigniterf\system\HTTP\RequestTrait.php(298): filter_var('30', 1, 0)
+#2 C:\xampp\htdocs\codeigniterf\system\HTTP\IncomingRequest.php(503): CodeIgniter\HTTP\Request->fetchGlobal('request', 'setting_value', 1, 0)
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\TransactionSetting.php(60): CodeIgniter\HTTP\IncomingRequest->getVar('setting_value', true)
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\TransactionSetting->update()
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionSetting))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 06:41:07 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\codeigniterf\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\codeigniterf\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\TransactionSetting.php(74): redirect('TransactionSett...', 'refresh')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\TransactionSetting->update()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionSetting))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-03 06:44:37 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:44:40 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:44:48 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:48:02 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:50:24 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:51:35 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\codeigniterf\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\codeigniterf\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\codeigniterf\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('TransactionSett...', 'before')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 06:55:36 --> Undefined property: App\Controllers\Emailformat::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 06:56:51 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-03 06:58:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 06:59:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::count_all_results()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:00:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count_all_results()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:01:22 --> CodeIgniter\Database\BaseBuilder::countAllResults(): Argument #1 ($reset) must be of type bool, null given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 454
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(454): CodeIgniter\Database\BaseBuilder->countAllResults(NULL, false)
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:01:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::count_all_results()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:02:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(67): App\Models\Common->getDataTableSource('email_format', Array, Array, 'id,title,subjec...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->getdata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:51:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '', '', Array)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:52:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '', '', Array)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:52:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '', '', Array)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:54:48 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '', '', Array)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 07:55:35 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:56:04 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:56:38 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', 1, '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:56:39 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', 1, '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:56:40 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', 1, '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:56:56 --> Optional parameter $condition_array declared before required parameter $limit is implicitly treated as a required parameter
+#0 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(264): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 136)
+#1 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(264): include_once()
+#2 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Comm...')
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(60): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Comm...')
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Emailformat->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-03 07:57:27 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:58:46 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 07:58:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '', '', Array)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-03 08:00:37 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('1')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:00:59 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\subadmin\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('subadmin/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(32): view('subadmin/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-03 08:01:13 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:01:55 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:03:01 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:03:02 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:03:02 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:03:03 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-03 08:03:17 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #2 ($offset) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniterf\app\Models\Common.php on line 159
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(159): CodeIgniter\Database\BaseBuilder->limit(1, '')
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Emailformat.php(76): App\Models\Common->select_data_by_condition('email_format', Array, '*', '', '', '1', '', Array)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Emailformat->edit('9')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emailformat))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

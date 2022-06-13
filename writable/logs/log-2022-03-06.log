@@ -1,0 +1,62 @@
+ERROR - 2022-03-06 23:04:42 --> MySQL server has gone away
+CRITICAL - 2022-03-06 23:04:42 --> MySQL server has gone away
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(174): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Dashboard.php(33): App\Models\Common->select_data_by_condition('member', Array, '*', '', '', '', 0, Array)
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-06 23:20:20 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\payout\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('payout/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Payout.php(36): view('payout/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Payout->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payout))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-06 23:23:21 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\xampp\htdocs\codeigniterf\app\Views\payout\index.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 160)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('payout/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Payout.php(36): view('payout/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Payout->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payout))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-06 23:33:20 --> Unknown column 'deposit.created_datetime' in 'where clause'
+CRITICAL - 2022-03-06 23:33:20 --> Unknown column 'deposit.created_datetime' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1542): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(474): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Report.php(72): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Report->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-06 23:35:10 --> Unknown column 'deposit.created_datetime' in 'where clause'
+CRITICAL - 2022-03-06 23:35:10 --> Unknown column 'deposit.created_datetime' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1542): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(474): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Report.php(72): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Report->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-06 23:55:31 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()

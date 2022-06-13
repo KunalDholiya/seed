@@ -1,0 +1,112 @@
+ERROR - 2022-03-07 00:09:23 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-07 00:10:28 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL/TLS already set-up for this stream
+ERROR - 2022-03-07 00:10:52 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-07 00:12:05 --> Email: sendWithSendmail throwed fwrite(): Write of 19975 bytes failed with errno=32 Broken pipe
+ERROR - 2022-03-07 00:18:16 --> Email: sendWithSendmail throwed fwrite(): Write of 19975 bytes failed with errno=32 Broken pipe
+ERROR - 2022-03-07 00:25:31 --> Email: sendWithSmtp throwed fsockopen(): Unable to connect to ssl://smtp.googlemail.com:25 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond)
+ERROR - 2022-03-07 00:28:42 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-03-07 00:34:04 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-03-07 01:02:57 --> Class "App\Controllers\Services" not found
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\ForgotPassword->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-07 01:03:50 --> Undefined variable $year
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->index()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 01:06:18 --> Undefined property: App\Controllers\ForgotPassword::$uri
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 01:07:19 --> Undefined property: App\Controllers\ForgotPassword::$uri
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 01:08:29 --> Request URI segment is out of range: 1
+#0 C:\xampp\htdocs\codeigniterf\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(1)
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(133): CodeIgniter\HTTP\URI->getSegment(1)
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-07 01:12:18 --> Invalid file: login/changePassword.php
+#0 C:\xampp\htdocs\codeigniterf\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/changePas...')
+#1 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('login/changePas...', Array, true)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(136): view('login/changePas...', Array)
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-07 01:15:54 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\changePassword.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('Login/changePas...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(136): view('Login/changePas...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-07 01:16:57 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\changePassword.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('Login/changePas...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(136): view('Login/changePas...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-07 01:17:14 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp\htdocs\codeigniterf\app\Views\login\changePassword.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('Login/changePas...', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\ForgotPassword.php(136): view('Login/changePas...', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\ForgotPassword->reset_password('arazu_gajera_44...')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-07 23:20:59 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-07 23:20:59 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1542): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Report.php(114): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Report->getseedtabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-07 23:21:07 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-07 23:21:07 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1542): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Report.php(114): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Report->getseedtabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

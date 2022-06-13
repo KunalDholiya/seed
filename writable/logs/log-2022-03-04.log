@@ -1,0 +1,977 @@
+CRITICAL - 2022-03-04 01:50:00 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\codeigniterf\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\codeigniterf\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Login.php(91): redirect('Login')
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Login->authenticate()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-04 01:51:22 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\subadmin\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('subadmin/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(32): view('subadmin/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 01:52:53 --> Undefined property: App\Controllers\SubAdmin::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 01:59:46 --> Undefined property: App\Controllers\SubAdmin::$input
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 02:04:26 --> xss_clean is not a valid rule.
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('xss_clean')
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('firstname', 'Sub Admin name', 'kunal', Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(65): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->addnew()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-04 02:05:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::insert_id()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(140): App\Models\Common->insert_data_getid(Array, 'admin')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->addnew()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 02:08:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::insertID()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(140): App\Models\Common->insert_data_getid(Array, 'admin')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->addnew()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 02:11:17 --> Undefined property: App\Controllers\SubAdmin::$config
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(177): App\Controllers\BaseController->sendEmail('SEED HARVEST', 'arazugajera98@g...', 'kunaldholiya@gm...', 'Subadmin Regist...', '<!DOCTYPE html>...')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->addnew()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-04 02:22:35 --> Undefined variable $filename
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->addnew()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-04 02:23:13 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-04 02:27:09 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-03-04 02:28:12 --> Undefined variable $password
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\SubAdmin.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 249)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\SubAdmin->editnew('MTI=')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubAdmin))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-04 02:29:08 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-04 02:29:13 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-03-04 02:30:07 --> Undefined property: App\Controllers\Members::$router
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 02:35:32 --> Undefined property: App\Controllers\Members::$router
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 02:37:15 --> Undefined property: App\Controllers\Members::$router
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-04 02:40:23 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+CRITICAL - 2022-03-04 02:40:23 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(487): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(61): App\Models\Common->getDataTableSource('member', Array, Array, 'id,member.email...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 02:40:25 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+CRITICAL - 2022-03-04 02:40:25 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(487): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(61): App\Models\Common->getDataTableSource('member', Array, Array, 'id,member.email...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 02:42:40 --> Unknown column 'seed_`seed_member.name' in 'where clause'
+CRITICAL - 2022-03-04 02:42:40 --> Unknown column 'seed_`seed_member.name' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(487): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(61): App\Models\Common->getDataTableSource('member', Array, Array, 'id,member.email...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 03:20:14 --> Undefined property: App\Controllers\Members::$db
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 03:21:58 --> Undefined variable $db
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 03:30:10 --> Too few arguments to function App\Models\Common::__construct(), 0 passed in C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php on line 63 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(63): App\Models\Common->__construct()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-04 03:31:10 --> Too few arguments to function App\Models\Common::__construct(), 0 passed in C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php on line 63 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(63): App\Models\Common->__construct()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-04 03:31:11 --> Too few arguments to function App\Models\Common::__construct(), 0 passed in C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php on line 63 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(63): App\Models\Common->__construct()
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Members->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-03-04 03:39:28 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+CRITICAL - 2022-03-04 03:39:28 --> Unknown column 'seed_`seed_member.member_no' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(489): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Members.php(61): App\Models\Common->getDataTableSource('member', Array, Array, 'id,member.email...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Members->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 04:50:14 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\codeigniterf\app\Views\deposit\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('deposit/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(37): view('deposit/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:52:01 --> Undefined variable $csrf_token
+#0 C:\xampp\htdocs\codeigniterf\app\Views\deposit\index.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 161)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('deposit/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(37): view('deposit/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:52:02 --> Undefined variable $csrf_token
+#0 C:\xampp\htdocs\codeigniterf\app\Views\deposit\index.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 161)
+#1 C:\xampp\htdocs\codeigniterf\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniterf\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniterf\system\Common.php(1089): CodeIgniter\View\View->render('deposit/index', Array, true)
+#4 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(37): view('deposit/index', Array)
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->index()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:54:28 --> trim(): Argument #1 ($string) must be of type string, array given
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(279): trim(Array)
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('member_id', 'Member name', Array, Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(73): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->addnew()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-04 04:55:22 --> trim(): Argument #1 ($string) must be of type string, array given
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(279): trim(Array)
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('member_id', 'Member name', Array, Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(73): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->addnew()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-04 04:55:36 --> strip_tags(): Argument #1 ($string) must be of type string, array given
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(279): strip_tags(Array)
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('member_id', 'Member name', Array, Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(73): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->addnew()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-04 04:55:38 --> strip_tags(): Argument #1 ($string) must be of type string, array given
+#0 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(279): strip_tags(Array)
+#1 C:\xampp\htdocs\codeigniterf\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('member_id', 'Member name', Array, Array, Array)
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(73): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->addnew()
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-03-04 04:56:16 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 04:56:16 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(489): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:00:08 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-04 05:00:08 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(489): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:01:12 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-04 05:01:12 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(489): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 05:08:31 --> syntax error, unexpected variable "$output"
+#0 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Comm...')
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(65): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Comm...')
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Deposit->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-04 05:08:49 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:08:49 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(490): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:13:38 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:13:38 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:14:31 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:14:31 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:14:54 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:14:54 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:16:42 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:16:42 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:17:25 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:17:25 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `seed_de...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seed_de...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seed_de...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `seed_de...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(505): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:18:15 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:18:15 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 05:29:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-03-04 05:31:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:31:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(490): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:38:47 --> Table 'seed.admin' doesn't exist
+CRITICAL - 2022-03-04 05:38:47 --> Table 'seed.admin' doesn't exist
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(311): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(71): App\Models\Common->selectRecordById('admin', '1', 'admin_id')
+#6 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Deposit->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-04 05:39:06 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:39:06 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(490): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 05:43:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::orLike()
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-04 05:44:20 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:44:20 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(490): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:50:59 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:50:59 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 05:51:30 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+#0 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#1 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 05:51:56 --> syntax error, unexpected identifier "print_r", expecting "," or ";"
+#0 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\codeigniterf\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Comm...')
+#2 C:\xampp\htdocs\codeigniterf\app\Controllers\BaseController.php(65): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Comm...')
+#3 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(16): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(810): App\Controllers\Deposit->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-04 05:52:15 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:52:15 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 05:55:37 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 05:55:37 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:00:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`seed_``seed_deposit`.`member_no` LIKE '%fhg%' ESCAPE '!'
+`amount_planted_wee...' at line 7
+CRITICAL - 2022-03-04 06:00:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`seed_``seed_deposit`.`member_no` LIKE '%fhg%' ESCAPE '!'
+`amount_planted_wee...' at line 7
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:01:20 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:01:20 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:04:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:04:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `seed_de...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seed_de...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seed_de...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `seed_de...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(505): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:06:30 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:06:30 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:09:08 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-04 06:09:08 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:09:10 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-03-04 06:09:10 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:16:11 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:16:11 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:20:44 --> Unknown column 'seed_eposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:20:44 --> Unknown column 'seed_eposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(474): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:20:54 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:20:54 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:21:25 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:21:25 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:23:46 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:23:46 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:24:03 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:24:03 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:25:43 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:25:43 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:28:44 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:28:44 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:32:29 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:32:29 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:33:52 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:33:52 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:36:23 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:36:23 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:44:09 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:44:09 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1540): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:45:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:45:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:53:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:53:00 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:54:42 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:54:42 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:55:16 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:55:16 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:56:17 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:56:17 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:57:35 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:57:35 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:57:57 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:57:57 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:59:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:59:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 06:59:47 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 06:59:47 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:00:12 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:00:12 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:00:26 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:00:26 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:00:39 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:00:39 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-04 07:05:06 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+#0 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(506): count(Object(CodeIgniter\Database\MySQLi\Result))
+#1 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#2 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#3 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#4 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-03-04 07:06:12 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:06:12 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `seed_de...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seed_de...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seed_de...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `seed_de...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(505): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:08:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:08:04 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(491): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:09:52 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:09:52 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1541): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(556): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource1('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-04 07:10:17 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+CRITICAL - 2022-03-04 07:10:17 --> Unknown column 'seed_`seed_deposit.id' in 'where clause'
+#0 C:\xampp\htdocs\codeigniterf\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `seed_de...', 0)
+#1 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seed_de...')
+#2 C:\xampp\htdocs\codeigniterf\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seed_de...')
+#3 C:\xampp\htdocs\codeigniterf\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `seed_de...', Array, false)
+#4 C:\xampp\htdocs\codeigniterf\app\Models\Common.php(505): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterf\app\Controllers\Deposit.php(58): App\Models\Common->getDataTableSource('deposit', Array, Array, 'deposit.id,depo...', Array, Array, '')
+#6 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(832): App\Controllers\Deposit->gettabledata()
+#7 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deposit))
+#8 C:\xampp\htdocs\codeigniterf\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterf\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
